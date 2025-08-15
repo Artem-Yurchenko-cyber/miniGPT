@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <meta charset="UTF-8">
-        <title>Мій ШІ-бот</title>
-        <link rel = "stylesheet" href="/static/style.css">
-    </head>
-
-    <body>
-        <h1>Чат з ботом</h1>
-        <div id="chat">
-            <input type="text" id="question" placeholder="Введи питання...">
-            <button onclick="sendQuestion()">Відправити</button>
-            <p><strong>Відповідь:</strong><span id="answer"></span></p>
-        </div>
-        <script src="/static/script.js"></script>
-    </body> 
+<head>
+    <meta charset="UTF-8">
+    <title>miniGPT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-box"></div>
+        <h2>Mini-GPT</h2>
+        <p>Напишіть help щоб дізнатися функціонал</p>
+        <p>напишіть hello або "привіт" щоб почати спілкування</p>
+        <input type="text" id="user-input" placeholder="Напишіть повідомлення...">
+        <button id="send-btn">Відправити</button>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
 </html>
