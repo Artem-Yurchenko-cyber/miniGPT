@@ -1,0 +1,24 @@
+This is the plan of project development
++ 1. to do the basic interface for users
++ 2. to do instructions and hello/hi - responce
++- 3. to do opportunity to add numbers
+- 4. to substract 
+- 5. to multify
+- 6. to divident
+- 7. factorial, root and power
+
+- 8. the weather prediction
+
+- 9. translator
+
+- 10. randomazer
+
+- 11. unit converter 
+
+- 12. data time
+
+- 13. mood analysis
+
+- 14. english teacher
+
+- 15. programming teacher
