@@ -1,24 +1,21 @@
 This is the plan of project development
-+ 1. to do the basic interface for users
-+ 2. to do instructions and hello/hi - responce
-+- 3. to do opportunity to add numbers
-- 4. to substract 
-- 5. to multify
-- 6. to divident
-- 7. factorial, root and power
 
-- 8. the weather prediction
+Step 1: Basic mathematic
++ 1. to do basic user interface
++ 2. realisation of greeting hi/hello
++ 3. reaslisation of basic arifmatic: add, substract, multiply, divident
+- 4. additional mathematic: power, root, factorial
 
+Step 2: Utilities (useful instruments)
+- 5. Randomizer
+- 6. Unit converter
+- 7. data & time
+
+Step 3: (API Integration)
+- 8. weather prediction
 - 9. translator
 
-- 10. randomazer
-
-- 11. unit converter 
-
-- 12. data time
-
-- 13. mood analysis
-
-- 14. english teacher
-
-- 15. programming teacher
+Step 4: (smart functional)
+- 10. Mood analysis
+- 11. English teacher
+- 12. Programing teacher
