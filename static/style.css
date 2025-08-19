@@ -1,18 +1,68 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 40px;
     background: #f5f5f5;
+    margin: 0;
+    padding: 20px;
 }
-#chat {
-    background: white;
+
+/* Контейнер для двох блоків */
+.container {
+    display: flex;
+    justify-content: space-between; /* розкидає вліво і вправо */
+    gap: 20px;
+}
+
+/* Ліва частина з чатом */
+.chat-box {
+    flex: 3; /* займає більшу ширину */
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-input {
-    width: 200px;
-    padding: 5px;
+
+/* Права частина (менша) */
+.sidebar {
+    flex: 1; /* займає меншу ширину */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
-button{
-    padding: 6px 10px;
+
+#instruction-btn {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background: #eee;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#instruction-btn:hover {
+    background: #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+.instruction-container {
+    display: flex;
+    flex-direction: column; /* ставить блоки один під одним */
+    align-items: flex-start; /* щоб вирівняти зліва */
+    margin-bottom: 10px;
+}
+
+#instruction-btn {
+    margin-bottom: 5px; /* відступ між кнопкою та блоком */
+}
+
+#help-box {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    max-width: 400px; /* щоб текст не розтягувався на всю сторінку */
+}
+
+.hidden {
+    display: none;
 }

@@ -1,12 +1,19 @@
-document.getElementById("send-btn").addEventListener("click", sendMessage);
-document.getElementById("user-input").addEventListener("keypress", function(e) {
+// слухачі подій
+document.querySelector("button").addEventListener("click", sendMessage);
+document.getElementById("message").addEventListener("keypress", function(e) {
     if (e.key === "Enter") {
         sendMessage();
     }
 });
 
+// показ/приховування інструкції
+document.getElementById("instruction-btn").addEventListener("click", function() {
+    const helpBox = document.getElementById("help-box");
+    helpBox.classList.toggle("hidden");
+});
+
 function sendMessage() {
-    const inputField = document.getElementById("user-input");
+    const inputField = document.getElementById("message");
     const message = inputField.value.trim();
     if (!message) return;
 
@@ -25,7 +32,7 @@ function sendMessage() {
 }
 
 function appendMessage(sender, message) {
-    const chatBox = document.getElementById("chat-box");
+    const chatBox = document.getElementById("chat");
     const msgElement = document.createElement("div");
     msgElement.textContent = `${sender}: ${message}`;
     chatBox.appendChild(msgElement);

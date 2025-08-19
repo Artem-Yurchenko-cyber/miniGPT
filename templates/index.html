@@ -2,18 +2,33 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>miniGPT</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Mini-GPT</title>
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <div id="chat-container">
-        <div id="chat-box"></div>
-        <h2>Mini-GPT</h2>
-        <p>Напишіть help щоб дізнатися функціонал</p>
-        <p>напишіть hello або "привіт" щоб почати спілкування</p>
-        <input type="text" id="user-input" placeholder="Напишіть повідомлення...">
-        <button id="send-btn">Відправити</button>
+    <div class="container">
+        <!-- Ліва частина: чат -->
+        <div class="chat-box">
+            <h2>Mini-GPT</h2>
+            <div id="chat"></div>
+            <input type="text" id="message" placeholder="Напишіть повідомлення...">
+            <button onclick="sendMessage()">Відправити</button>
+        </div>
+
+        <!-- Права частина: інструкція -->
+        <div class="instruction-container">
+            <button id="instruction-btn">Інструкція з користування</button>
+
+            <div id="help-box" class="hidden">
+                <p>Я можу виконувати математичні операції.</p>
+                <p>Наприклад: "додай 2 і 3", "помнож 4 на 5".</p>
+                <p>Мови: українська та англійська.</p>
+                <p>Напишіть "привіт" або "hello", щоб почати спілкування.</p>
+            </div>
+        </div>
+
     </div>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <script src="static/script.js"></script>
 </body>
 </html>
