@@ -4,7 +4,7 @@ Step 1: Basic mathematic
 + 1. to do basic user interface
 + 2. realisation of greeting hi/hello
 + 3. reaslisation of basic arifmatic: add, substract, multiply, divident
-- 4. additional mathematic: power, root, factorial
++ 4. additional mathematic: power, root, factorial
 
 Step 2: Utilities (useful instruments)
 - 5. Randomizer

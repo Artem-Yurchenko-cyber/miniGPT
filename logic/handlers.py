@@ -1,10 +1,11 @@
 from logic.commands.greet_cmd import handle_greet
 from logic.commands.math_cmds import handle_math
-
+from logic.commands.utilities_cmd import handle_utilities
 
 COMMAND_HANDLERS = [
     handle_greet,
     handle_math,
+    handle_utilities,
 ]
 
 
